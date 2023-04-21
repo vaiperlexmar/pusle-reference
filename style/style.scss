@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+@import "color.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: $light-green;
+}
+
+header {
+  padding: 1em 1.5em 0.75em;
+  border-bottom: 1px solid $light-gray;
+  background-color: $white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+
+  // Style hamburger menu
+  .hamburger {
+    color: $main-dark-green;
+
+    display: block;
+    position: absolute;
+    right: 0;
+
+    span {
+      font-size: 2.5rem;
+    }
+  }
+
+  .hamburger:hover {
+    color: $green;
+  }
+}
+
+#nav-links {
+  display: none;
+  list-style-type: none;
+  padding: 1em 1.5em 0.75em;
+  line-height: 1.5;
+
+  a {
+    display: block;
+
+    color: $main-dark-green;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2.25rem;
+  }
+
+  a:hover {
+    color: $black;
+  }
+
+  #sign-up {
+    width: 30%;
+    padding: 0.25rem 3rem;
+    margin-top: 1rem;
+
+    text-align: center;
+    font-size: 1.2rem;
+    color: $black;
+    background: linear-gradient(90deg, $main-dark-green, $green);
+  }
+}
+
+main {
+  padding: 0 1.5em;
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.disappearance-animation {
+  animation-name: smoothDisappearance;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+
+.appearacnce-animation {
+  animation-name: smoothAppearance;
+  animation-duration: 400ms;
+}
+
+@keyframes smoothDisappearance {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes smoothAppearance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

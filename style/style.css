@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #eafaf1;
+}
+
+header {
+  padding: 1em 1.5em 0.75em;
+  border-bottom: 1px solid #d6dae5;
+  background-color: #fcfcfc;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+nav .hamburger {
+  color: #00ad6a;
+  display: block;
+  position: absolute;
+  right: 0;
+}
+nav .hamburger span {
+  font-size: 2.5rem;
+}
+nav .hamburger:hover {
+  color: #1fe374;
+}
+
+#nav-links {
+  display: none;
+  list-style-type: none;
+  padding: 1em 1.5em 0.75em;
+  line-height: 1.5;
+}
+#nav-links a {
+  display: block;
+  color: #00ad6a;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+#nav-links a:hover {
+  color: #080c16;
+}
+#nav-links #sign-up {
+  width: 30%;
+  padding: 0.25rem 3rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #080c16;
+  background: linear-gradient(90deg, #00ad6a, #1fe374);
+}
+
+main {
+  padding: 0 1.5em;
+}
+main h1 {
+  font-size: 3rem;
+}
+
+.disappearance-animation {
+  animation-name: smoothDisappearance;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+
+.appearacnce-animation {
+  animation-name: smoothAppearance;
+  animation-duration: 400ms;
+}
+
+@keyframes smoothDisappearance {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes smoothAppearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */
