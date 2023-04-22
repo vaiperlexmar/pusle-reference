@@ -1,9 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+:root .green-text {
+  color: #00ad6a;
+}
+:root .gray-text {
+  color: #464951;
+}
+:root .black-text {
+  color: #080c16;
+}
+:root .white-text {
+  color: #fcfcfc;
+}
+:root .bold {
+  font-weight: 700;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
 }
 
 body {
@@ -24,7 +41,6 @@ nav {
   position: relative;
 }
 nav .hamburger {
-  color: #00ad6a;
   display: block;
   position: absolute;
   right: 0;
@@ -40,14 +56,11 @@ nav .hamburger:hover {
   display: none;
   list-style-type: none;
   padding: 1em 1.5em 0.75em;
-  line-height: 1.5;
 }
 #nav-links a {
   display: block;
-  color: #00ad6a;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 #nav-links a:hover {
   color: #080c16;
@@ -63,10 +76,58 @@ nav .hamburger:hover {
 }
 
 main {
-  padding: 0 1.5em;
+  font-size: 1.125rem;
+  padding: 0 1.5rem;
+  margin-top: 1.8rem;
 }
-main h1 {
+main .title {
   font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 3rem;
+  letter-spacing: -2px;
+}
+main #pricelist {
+  margin-top: 1rem;
+}
+main #pricelist .plan {
+  background-color: #fcfcfc;
+  padding: 1rem;
+}
+main #pricelist .plan h1 {
+  line-height: 1;
+  font-size: 2.25rem;
+  letter-spacing: -2px;
+}
+main #pricelist .plan .plan-benefits {
+  list-style: none;
+}
+main #pricelist #basic-plan {
+  padding: 0 0.5rem;
+  margin-bottom: 2rem;
+}
+main #pricelist #basic-plan h3 {
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+main #pricelist #basic-plan li {
+  margin: 0 0 0 2rem;
+}
+main #pricelist #basic-plan li:last-of-type {
+  margin-bottom: 1rem;
+}
+main #pricelist #basic-plan li,
+main #pricelist #basic-plan p {
+  font-size: 1rem;
+}
+main #pricelist .recommended {
+  background-color: #00ad6a;
+  text-align: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 0.75rem;
+  padding: 0.5rem 0;
+}
+main #pricelist #business-plan {
+  border: 1px solid #00ad6a;
 }
 
 .disappearance-animation {

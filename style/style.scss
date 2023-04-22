@@ -1,11 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
 @import "color.scss";
 
+:root {
+  .green-text {
+    color: $main-dark-green;
+  }
+
+  .gray-text {
+    color: $gray;
+  }
+
+  .black-text {
+    color: $black;
+  }
+
+  .white-text {
+    color: $white;
+  }
+
+  .bold {
+    font-weight: 700;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
 }
 
 body {
@@ -27,8 +50,6 @@ nav {
 
   // Style hamburger menu
   .hamburger {
-    color: $main-dark-green;
-
     display: block;
     position: absolute;
     right: 0;
@@ -47,15 +68,12 @@ nav {
   display: none;
   list-style-type: none;
   padding: 1em 1.5em 0.75em;
-  line-height: 1.5;
 
   a {
     display: block;
 
-    color: $main-dark-green;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   a:hover {
@@ -75,10 +93,69 @@ nav {
 }
 
 main {
-  padding: 0 1.5em;
+  font-size: 1.125rem;
+  padding: 0 1.5rem;
+  margin-top: 1.8rem;
 
-  h1 {
+  .title {
     font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+    letter-spacing: -2px;
+  }
+
+  #pricelist {
+    margin-top: 1rem;
+
+    .plan {
+      background-color: $white;
+      padding: 1rem;
+
+      h1 {
+        line-height: 1;
+        font-size: 2.25rem;
+        letter-spacing: -2px;
+      }
+
+      .plan-benefits {
+        list-style: none;
+      }
+    }
+
+    #basic-plan {
+      padding: 0 0.5rem;
+      margin-bottom: 2rem;
+
+      h3 {
+        line-height: 1;
+        margin-bottom: 1rem;
+      }
+
+      li {
+        margin: 0 0 0 2rem;
+      }
+
+      li:last-of-type {
+        margin-bottom: 1rem;
+      }
+
+      li,
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .recommended {
+      background-color: $main-dark-green;
+      text-align: center;
+      border-radius: 0.5rem 0.5rem 0 0;
+      font-size: 0.75rem;
+      padding: 0.5rem 0;
+    }
+
+    #business-plan {
+      border: 1px solid $main-dark-green;
+    }
   }
 }
 
