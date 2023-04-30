@@ -10,6 +10,10 @@
     color: $gray;
   }
 
+  .dark-gray-text {
+    color: $dark-gray;
+  }
+
   .black-text {
     color: $black;
   }
@@ -73,23 +77,26 @@ nav {
     display: block;
 
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 
   a:hover {
     color: $black;
   }
 
-  #sign-up {
+  .sign-up {
     width: 30%;
-    padding: 0.25rem 3rem;
+    padding: 1rem 1rem;
     margin-top: 1rem;
 
-    text-align: center;
-    font-size: 1.2rem;
-    color: $black;
     background: linear-gradient(90deg, $main-dark-green, $green);
   }
+}
+
+.sign-up {
+  text-align: center;
+  font-size: 1.1rem;
+  color: $black;
 }
 
 main {
@@ -102,6 +109,10 @@ main {
     line-height: 1;
     margin-bottom: 3rem;
     letter-spacing: -2px;
+  }
+
+  .ls-1px {
+    letter-spacing: 1px;
   }
 
   #pricelist {
@@ -118,7 +129,9 @@ main {
       }
 
       .plan-benefits {
-        list-style: none;
+        ul {
+          list-style-type: none;
+        }
       }
     }
 
@@ -145,16 +158,54 @@ main {
       }
     }
 
+    .price {
+      font-size: 1.25rem;
+
+      margin-bottom: 2rem;
+    }
+
     .recommended {
       background-color: $main-dark-green;
       text-align: center;
       border-radius: 0.5rem 0.5rem 0 0;
       font-size: 0.75rem;
       padding: 0.5rem 0;
+      letter-spacing: 1px;
     }
 
     #business-plan {
       border: 1px solid $main-dark-green;
+
+      h1 {
+        margin-bottom: 0.2rem;
+      }
+
+      .plan-benefits {
+        font-size: 1rem;
+        margin: 2rem 0;
+      }
+
+      li {
+        padding: 0 0.5em;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      li::marker {
+        content: "✔";
+        color: $main-dark-green;
+        font-size: 0.75rem;
+      }
+
+      .sign-up {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+
+        font-weight: 600;
+        font-size: 1.3rem;
+        background-color: $green;
+      }
     }
   }
 }

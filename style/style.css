@@ -1,8 +1,12 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
 :root .green-text {
   color: #00ad6a;
 }
 :root .gray-text {
+  color: #83858a;
+}
+:root .dark-gray-text {
   color: #464951;
 }
 :root .black-text {
@@ -60,19 +64,22 @@ nav .hamburger:hover {
 #nav-links a {
   display: block;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 #nav-links a:hover {
   color: #080c16;
 }
-#nav-links #sign-up {
+#nav-links .sign-up {
   width: 30%;
-  padding: 0.25rem 3rem;
+  padding: 1rem 1rem;
   margin-top: 1rem;
-  text-align: center;
-  font-size: 1.2rem;
-  color: #080c16;
   background: linear-gradient(90deg, #00ad6a, #1fe374);
+}
+
+.sign-up {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #080c16;
 }
 
 main {
@@ -86,6 +93,9 @@ main .title {
   margin-bottom: 3rem;
   letter-spacing: -2px;
 }
+main .ls-1px {
+  letter-spacing: 1px;
+}
 main #pricelist {
   margin-top: 1rem;
 }
@@ -98,8 +108,8 @@ main #pricelist .plan h1 {
   font-size: 2.25rem;
   letter-spacing: -2px;
 }
-main #pricelist .plan .plan-benefits {
-  list-style: none;
+main #pricelist .plan .plan-benefits ul {
+  list-style-type: none;
 }
 main #pricelist #basic-plan {
   padding: 0 0.5rem;
@@ -119,15 +129,45 @@ main #pricelist #basic-plan li,
 main #pricelist #basic-plan p {
   font-size: 1rem;
 }
+main #pricelist .price {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
 main #pricelist .recommended {
   background-color: #00ad6a;
   text-align: center;
   border-radius: 0.5rem 0.5rem 0 0;
   font-size: 0.75rem;
   padding: 0.5rem 0;
+  letter-spacing: 1px;
 }
 main #pricelist #business-plan {
   border: 1px solid #00ad6a;
+}
+main #pricelist #business-plan h1 {
+  margin-bottom: 0.2rem;
+}
+main #pricelist #business-plan .plan-benefits {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+main #pricelist #business-plan li {
+  padding: 0 0.5em;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+main #pricelist #business-plan li::marker {
+  content: "✔";
+  color: #00ad6a;
+  font-size: 0.75rem;
+}
+main #pricelist #business-plan .sign-up {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  background-color: #1fe374;
 }
 
 .disappearance-animation {
