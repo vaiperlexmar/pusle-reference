@@ -22,8 +22,20 @@
     color: $white;
   }
 
+  .regular {
+    font-weight: 400;
+  }
+
   .bold {
     font-weight: 700;
+  }
+
+  .light-gray-bg {
+    background-color: #f2f3f3;
+  }
+
+  .center-text {
+    text-align: center;
   }
 }
 
@@ -117,6 +129,7 @@ main {
 
   #pricelist {
     margin-top: 1rem;
+    margin-bottom: 5rem;
 
     .plan {
       background-color: $white;
@@ -175,39 +188,73 @@ main {
 
     #business-plan {
       border: 1px solid $main-dark-green;
+      margin-bottom: 2rem;
 
       h1 {
         margin-bottom: 0.2rem;
       }
+    }
 
-      .plan-benefits {
-        font-size: 1rem;
-        margin: 2rem 0;
-      }
+    #extra-features {
+      border: 1px solid $light-gray;
 
-      li {
-        padding: 0 0.5em;
-        margin-bottom: 1rem;
-        line-height: 1.2;
-      }
-
-      li::marker {
-        content: "✔";
-        color: $main-dark-green;
-        font-size: 0.75rem;
-      }
-
-      .sign-up {
-        width: 100%;
-        padding: 0.5rem 1rem;
-        margin-top: 1rem;
-
-        font-weight: 600;
-        font-size: 1.3rem;
-        background-color: $green;
+      div:first-of-type {
+        p {
+          font-size: 0.9rem;
+          border: 1px solid $light-gray;
+          padding: 1rem;
+        }
       }
     }
   }
+
+  #quote {
+    margin-bottom: 3rem;
+
+    img {
+      display: block;
+      margin: 0 auto 1rem;
+
+      width: 25%;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    h5 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.plan-benefits {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+li {
+  padding: 0 0.5em;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+li::marker {
+  content: "✔";
+  color: $main-dark-green;
+  font-size: 0.75rem;
+}
+
+.sign-up {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+
+  font-weight: 600;
+  font-size: 1.3rem;
+  background-color: $green;
 }
 
 .disappearance-animation {
