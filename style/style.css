@@ -21,6 +21,9 @@
 :root .bold {
   font-weight: 700;
 }
+:root .black-bg {
+  background-color: #080c16;
+}
 :root .white-bg {
   background-color: #fcfcfc;
 }
@@ -29,6 +32,10 @@
 }
 :root .center-text {
   text-align: center;
+}
+:root .center-img {
+  display: block;
+  margin: 0 auto;
 }
 :root .light-gray-border {
   border: 1px solid #d6dae5;
@@ -87,13 +94,13 @@ nav .hamburger:hover {
   width: 30%;
   padding: 1rem 1rem;
   margin-top: 1rem;
-  background: linear-gradient(90deg, #00ad6a, #1fe374);
 }
 
 .sign-up {
   text-align: center;
   font-size: 1.1rem;
   color: #080c16;
+  background: linear-gradient(90deg, #00ad6a, #1fe374);
 }
 
 main {
@@ -223,6 +230,30 @@ main #quote h5 {
 .faq-block h4 {
   font-size: 1.25rem;
   line-height: 1.2;
+}
+
+footer {
+  padding-top: 2rem;
+}
+footer .logo-footer {
+  width: 8rem;
+}
+footer .sign-up {
+  padding: 1rem 2rem;
+  display: block;
+  margin: 1.5rem auto 0;
+  background: linear-gradient(90deg, #00ad6a, #1fe374);
+  font-size: 1rem;
+  border: 0;
+}
+
+#nav-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-column {
+  list-style-type: none;
 }
 
 .disappearance-animation {

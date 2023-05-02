@@ -30,6 +30,10 @@
     font-weight: 700;
   }
 
+  .black-bg {
+    background-color: $black;
+  }
+
   .white-bg {
     background-color: $white;
   }
@@ -40,6 +44,11 @@
 
   .center-text {
     text-align: center;
+  }
+
+  .center-img {
+    display: block;
+    margin: 0 auto;
   }
 
   .light-gray-border {
@@ -107,8 +116,6 @@ nav {
     width: 30%;
     padding: 1rem 1rem;
     margin-top: 1rem;
-
-    background: linear-gradient(90deg, $main-dark-green, $green);
   }
 }
 
@@ -116,6 +123,8 @@ nav {
   text-align: center;
   font-size: 1.1rem;
   color: $black;
+
+  background: $green-gradient;
 }
 
 main {
@@ -278,6 +287,33 @@ main {
     font-size: 1.25rem;
     line-height: 1.2;
   }
+}
+
+footer {
+  padding-top: 2rem;
+
+  .logo-footer {
+    width: 8rem;
+  }
+
+  .sign-up {
+    padding: 1rem 2rem;
+    display: block;
+    margin: 1.5rem auto 0;
+
+    background: $green-gradient;
+    font-size: 1rem;
+    border: 0;
+  }
+}
+
+#nav-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-column {
+  list-style-type: none;
 }
 
 .disappearance-animation {
