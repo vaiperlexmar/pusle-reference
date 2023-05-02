@@ -21,11 +21,17 @@
 :root .bold {
   font-weight: 700;
 }
+:root .white-bg {
+  background-color: #fcfcfc;
+}
 :root .light-gray-bg {
   background-color: #f2f3f3;
 }
 :root .center-text {
   text-align: center;
+}
+:root .light-gray-border {
+  border: 1px solid #d6dae5;
 }
 
 * {
@@ -43,7 +49,6 @@ body {
 header {
   padding: 1em 1.5em 0.75em;
   border-bottom: 1px solid #d6dae5;
-  background-color: #fcfcfc;
 }
 
 nav {
@@ -110,7 +115,6 @@ main #pricelist {
   margin-bottom: 5rem;
 }
 main #pricelist .plan {
-  background-color: #fcfcfc;
   padding: 1rem;
 }
 main #pricelist .plan h1 {
@@ -158,12 +162,8 @@ main #pricelist #business-plan {
 main #pricelist #business-plan h1 {
   margin-bottom: 0.2rem;
 }
-main #pricelist #extra-features {
-  border: 1px solid #d6dae5;
-}
 main #pricelist #extra-features div:first-of-type p {
   font-size: 0.9rem;
-  border: 1px solid #d6dae5;
   padding: 1rem;
 }
 main #quote {
@@ -188,13 +188,12 @@ main #quote h5 {
   margin: 2rem 0;
 }
 
-li {
+.check-mark-li li {
   padding: 0 0.5em;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
-
-li::marker {
+.check-mark-li li::marker {
   content: "✔";
   color: #00ad6a;
   font-size: 0.75rem;
@@ -207,6 +206,23 @@ li::marker {
   font-weight: 600;
   font-size: 1.3rem;
   background-color: #1fe374;
+}
+
+#FAQ {
+  margin: 0 -1.5em;
+  padding: 2em 1.5em 0;
+}
+#FAQ h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.faq-block {
+  margin-bottom: 2.75rem;
+}
+.faq-block h4 {
+  font-size: 1.25rem;
+  line-height: 1.2;
 }
 
 .disappearance-animation {

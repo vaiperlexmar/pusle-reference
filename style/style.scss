@@ -30,12 +30,20 @@
     font-weight: 700;
   }
 
+  .white-bg {
+    background-color: $white;
+  }
+
   .light-gray-bg {
     background-color: #f2f3f3;
   }
 
   .center-text {
     text-align: center;
+  }
+
+  .light-gray-border {
+    border: 1px solid $light-gray;
   }
 }
 
@@ -54,7 +62,6 @@ body {
 header {
   padding: 1em 1.5em 0.75em;
   border-bottom: 1px solid $light-gray;
-  background-color: $white;
 }
 
 nav {
@@ -132,7 +139,6 @@ main {
     margin-bottom: 5rem;
 
     .plan {
-      background-color: $white;
       padding: 1rem;
 
       h1 {
@@ -196,12 +202,9 @@ main {
     }
 
     #extra-features {
-      border: 1px solid $light-gray;
-
       div:first-of-type {
         p {
           font-size: 0.9rem;
-          border: 1px solid $light-gray;
           padding: 1rem;
         }
       }
@@ -235,16 +238,18 @@ main {
   margin: 2rem 0;
 }
 
-li {
-  padding: 0 0.5em;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
+.check-mark-li {
+  li {
+    padding: 0 0.5em;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
 
-li::marker {
-  content: "✔";
-  color: $main-dark-green;
-  font-size: 0.75rem;
+  li::marker {
+    content: "✔";
+    color: $main-dark-green;
+    font-size: 0.75rem;
+  }
 }
 
 .sign-up {
@@ -255,6 +260,24 @@ li::marker {
   font-weight: 600;
   font-size: 1.3rem;
   background-color: $green;
+}
+
+#FAQ {
+  margin: 0 -1.5em;
+  padding: 2em 1.5em 0;
+
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+}
+.faq-block {
+  margin-bottom: 2.75rem;
+
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
 }
 
 .disappearance-animation {
