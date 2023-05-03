@@ -103,8 +103,6 @@ nav {
 
   a {
     display: block;
-
-    text-decoration: none;
     font-size: 2.25rem;
   }
 
@@ -117,6 +115,10 @@ nav {
     padding: 1rem 1rem;
     margin-top: 1rem;
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 .sign-up {
@@ -299,7 +301,8 @@ footer {
   .sign-up {
     padding: 1rem 2rem;
     display: block;
-    margin: 1.5rem auto 0;
+    margin: 1.5rem auto 2rem;
+    width: 85%;
 
     background: $green-gradient;
     font-size: 1rem;
@@ -308,12 +311,33 @@ footer {
 }
 
 #nav-footer {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding-right: 1rem;
+
+  margin-bottom: 2.5rem;
 }
 
 .footer-column {
   list-style-type: none;
+  font-size: 0.9rem;
+
+  li {
+    margin-bottom: 0.2rem;
+    line-height: 1.5;
+
+    color: $green;
+  }
+}
+
+#copyright {
+  padding: 0 1.75em 10em;
+  font-size: 0.75rem;
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 .disappearance-animation {
