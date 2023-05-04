@@ -93,17 +93,19 @@ nav .hamburger:hover {
   width: 30%;
   padding: 1rem 1rem;
   margin-top: 1rem;
+  font-size: 1.1rem;
+  background: linear-gradient(90deg, #00ad6a, #1fe374);
+}
+#nav-links .sign-up:hover {
+  cursor: pointer;
+  position: relative;
+  top: -5px;
+  right: -5px;
+  box-shadow: -5px 5px #464951;
 }
 
 a {
   text-decoration: none;
-}
-
-.sign-up {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #080c16;
-  background: linear-gradient(90deg, #00ad6a, #1fe374);
 }
 
 main {
@@ -176,6 +178,18 @@ main #pricelist #extra-features div:first-of-type p {
   font-size: 0.9rem;
   padding: 1rem;
 }
+main #pricelist #business-plan:hover,
+main #pricelist #extra-features:hover {
+  cursor: pointer;
+}
+main #pricelist #business-plan:hover li,
+main #pricelist #business-plan:hover h6,
+main #pricelist #business-plan:hover .sign-up,
+main #pricelist #extra-features:hover li,
+main #pricelist #extra-features:hover h6,
+main #pricelist #extra-features:hover .sign-up {
+  color: black;
+}
 main #quote {
   margin-bottom: 3rem;
 }
@@ -216,6 +230,7 @@ main #quote h5 {
   font-weight: 600;
   font-size: 1.3rem;
   background-color: #1fe374;
+  text-align: center;
 }
 
 #FAQ {
@@ -249,6 +264,13 @@ footer .sign-up {
   background: linear-gradient(90deg, #00ad6a, #1fe374);
   font-size: 1rem;
   border: 0;
+}
+footer .sign-up:hover {
+  cursor: pointer;
+  position: relative;
+  top: -5px;
+  right: -5px;
+  box-shadow: -5px 5px #464951;
 }
 
 #nav-footer {

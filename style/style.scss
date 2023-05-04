@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
 @import "color.scss";
 
+@mixin signInHover() {
+  cursor: pointer;
+  position: relative;
+  top: -5px;
+  right: -5px;
+
+  box-shadow: -5px 5px $dark-gray;
+}
+
 :root {
   .green-text {
     color: $main-dark-green;
@@ -41,7 +50,6 @@
   .light-gray-bg {
     background-color: #f2f3f3;
   }
-
   .center-text {
     text-align: center;
   }
@@ -114,19 +122,18 @@ nav {
     width: 30%;
     padding: 1rem 1rem;
     margin-top: 1rem;
+    font-size: 1.1rem;
+
+    background: $green-gradient;
+  }
+
+  .sign-up:hover {
+    @include signInHover();
   }
 }
 
 a {
   text-decoration: none;
-}
-
-.sign-up {
-  text-align: center;
-  font-size: 1.1rem;
-  color: $black;
-
-  background: $green-gradient;
 }
 
 main {
@@ -220,6 +227,16 @@ main {
         }
       }
     }
+
+    #business-plan:hover,
+    #extra-features:hover {
+      cursor: pointer;
+      li,
+      h6,
+      .sign-up {
+        color: black;
+      }
+    }
   }
 
   #quote {
@@ -271,6 +288,7 @@ main {
   font-weight: 600;
   font-size: 1.3rem;
   background-color: $green;
+  text-align: center;
 }
 
 #FAQ {
@@ -307,6 +325,10 @@ footer {
     background: $green-gradient;
     font-size: 1rem;
     border: 0;
+  }
+
+  .sign-up:hover {
+    @include signInHover();
   }
 }
 
